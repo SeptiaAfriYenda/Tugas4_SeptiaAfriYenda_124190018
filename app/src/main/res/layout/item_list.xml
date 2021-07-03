@@ -3,31 +3,67 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity"
+    android:orientation="horizontal"
     >
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:id="@+id/foto_oppo"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_centerHorizontal="true"
-        >
-    </ImageView>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tipe_oppo"
-        android:textSize="18pt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvtanggal"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:layout_below="@id/foto_oppo"
+        android:layout_marginLeft="5dp"
+        android:textSize="12pt"
         android:textAlignment="center"
         android:gravity="center_horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp">
+        android:textColor="@color/white">
+    </TextView>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvsembuh"
+        android:textSize="10pt"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvtanggal"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white">
+    </TextView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvmeninggal"
+        android:textSize="10pt"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvtanggal"
+        android:layout_below="@id/tvsembuh"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white">
+    </TextView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvkonfirmasi"
+        android:textSize="10pt"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvtanggal"
+        android:layout_below="@id/tvmeninggal"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white">
     </TextView>
 </RelativeLayout>

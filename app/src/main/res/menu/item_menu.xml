@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/ic_akun"
-        android:icon="@drawable/ic_person_24"
-        android:title="AKUN"/>
+        android:id="@+id/kasus"
+        android:tooltipText="kasus"
+        android:title="Data Kasus"
+        />
     <item
-        android:id="@+id/ic_list"
-        android:icon="@drawable/ic_list_24"
-        android:title="LIST"/>
+        android:id="@+id/rs_rujukan"
+        android:tooltipText="rumah sakit"
+        android:title="RS Rujukan"
+        />
 </menu>

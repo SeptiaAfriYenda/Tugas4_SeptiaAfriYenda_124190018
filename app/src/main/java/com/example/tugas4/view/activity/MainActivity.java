@@ -1,4 +1,4 @@
-package com.example.tugas4;
+package com.example.tugas4.view.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.tugas4.R;
+import com.example.tugas4.view.fragment.KasusFragment;
+import com.example.tugas4.view.fragment.RSFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -37,11 +40,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
         switch (item.getItemId()){
-            case R.id.ic_akun :
-                fragment = new AkunFragment();
+            case R.id.kasus :
+                fragment = new KasusFragment();
                 break;
-            case R.id.ic_list :
-                fragment = new ListFragment();
+            case R.id.rs_rujukan :
+                fragment = new RSFragment();
                 break;
         }
         return loadFragment(fragment);
